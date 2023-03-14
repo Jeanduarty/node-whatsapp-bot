@@ -15,6 +15,11 @@ function sendMessage(to, message){
   });
 }
 
+app.get("/", (req, res) => {
+  console.log('home');
+  return res.send("Bem vindo ao meu servidor!");
+});
+
 app.post("/sms", async (req, res) => {
   const { phoneNumber, message } = req.body;
   //phoneNumber precisa estar no formato: 5533999999999
