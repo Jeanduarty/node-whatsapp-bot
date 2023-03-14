@@ -23,13 +23,12 @@ app.get("/", (req, res) => {
 app.post("/sms", async (req, res) => {
   const { phoneNumber, message } = req.body;
   console.log("ENTROU NA ROTA");
+  console.log("CLIENTE VENOM!!!!!!!!!! =>", clientVenom);
   //phoneNumber precisa estar no formato: 5533999999999
-
   try {
-    if (!!clientVenom) sendMessage(phoneNumber, message);
-    
+    sendMessage(phoneNumber, message);
   } catch (error) {
-    console.log('CLIENTE NÃO ENCONTRADO!!', clientVenom);
+    console.log("CLIENTE NÃO ENCONTRADO!!", clientVenom);
     // console.log(error);
     return res.status(400).send();
   }
