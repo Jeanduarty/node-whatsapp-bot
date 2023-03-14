@@ -22,6 +22,7 @@ app.get("/", (req, res) => {
 
 app.post("/sms", async (req, res) => {
   const { phoneNumber, message } = req.body;
+  console.log('ENTROU NA ROTA');
   //phoneNumber precisa estar no formato: 5533999999999
 
   try {
