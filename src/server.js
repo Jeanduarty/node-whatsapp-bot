@@ -9,27 +9,28 @@ app.use(express.json());
 let clientVenom;
 venom.create().then((client) => (clientVenom = client));
 
-function sendMessage(to, message){
+function sendMessage(to, message) {
   clientVenom.sendText(`${to}@c.us`, `${message}`).then((result) => {
     console.log("Result: ", result); //retorna um objeto de successo
   });
 }
 
 app.get("/", (req, res) => {
-  console.log('home');
+  console.log("home");
   return res.send("Bem vindo ao meu servidor!");
 });
 
 app.post("/sms", async (req, res) => {
   const { phoneNumber, message } = req.body;
-  console.log('ENTROU NA ROTA');
+  console.log("ENTROU NA ROTA");
   //phoneNumber precisa estar no formato: 5533999999999
 
   try {
-    sendMessage(phoneNumber, message)
-
+    if (!!clientVenom) sendMessage(phoneNumber, message);
+    
   } catch (error) {
-    console.log(error);
+    console.log('CLIENTE NÃO ENCONTRADO!!', clientVenom);
+    // console.log(error);
     return res.status(400).send();
   }
 

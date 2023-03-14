@@ -1,2 +1,3 @@
-2023/03/14-12:45:08.100 193c Creating DB C:\Users\Jean\Documents\TRABALHO\node-whatsapp-bot\tokens\session\Default\Local Storage\leveldb since it was missing.
-2023/03/14-12:45:08.112 193c Reusing MANIFEST C:\Users\Jean\Documents\TRABALHO\node-whatsapp-bot\tokens\session\Default\Local Storage\leveldb/MANIFEST-000001
+2023/03/14-12:56:55.462 2dd0 Reusing MANIFEST C:\Users\Jean\Documents\TRABALHO\node-whatsapp-bot\tokens\session\Default\Local Storage\leveldb/MANIFEST-000001
+2023/03/14-12:56:55.463 2dd0 Recovering log #3
+2023/03/14-12:56:55.463 2dd0 Reusing old log C:\Users\Jean\Documents\TRABALHO\node-whatsapp-bot\tokens\session\Default\Local Storage\leveldb/000003.log 

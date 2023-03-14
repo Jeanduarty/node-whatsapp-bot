@@ -1,2 +1,3 @@
-2023/03/14-12:45:09.117 650 Creating DB C:\Users\Jean\Documents\TRABALHO\node-whatsapp-bot\tokens\session\Default\File System\Origins since it was missing.
-2023/03/14-12:45:09.122 650 Reusing MANIFEST C:\Users\Jean\Documents\TRABALHO\node-whatsapp-bot\tokens\session\Default\File System\Origins/MANIFEST-000001
+2023/03/14-12:56:55.723 2dd0 Reusing MANIFEST C:\Users\Jean\Documents\TRABALHO\node-whatsapp-bot\tokens\session\Default\File System\Origins/MANIFEST-000001
+2023/03/14-12:56:55.724 2dd0 Recovering log #3
+2023/03/14-12:56:55.724 2dd0 Reusing old log C:\Users\Jean\Documents\TRABALHO\node-whatsapp-bot\tokens\session\Default\File System\Origins/000003.log 
